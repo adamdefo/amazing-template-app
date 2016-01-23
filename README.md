@@ -1,1 +1,1 @@
-# Fast-developer-package 
+# fast app template 
