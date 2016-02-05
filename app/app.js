@@ -1,7 +1,7 @@
-var app = angular.module('PortalApp', []);
+var app = angular.module('FuckApp', []);
 
 
-app.controller('MainCtrl', function (ChartList, $scope, $rootScope, $location, $q, $http) {
+app.controller('MainCtrl', function ($scope, $rootScope, $location, $q, $http) {
     $scope.location = $location.path();
 
 });
