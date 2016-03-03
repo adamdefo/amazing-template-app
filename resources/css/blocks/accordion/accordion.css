@@ -1,0 +1,79 @@
+.accordion {
+    margin: 0;
+    padding: 0;
+}
+.accordion_item {
+    list-style: none;
+    min-height: 5rem;
+    border-bottom: 1px solid #eceff2;
+    margin-bottom: 2.5rem;
+}
+.accordion_item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.accordion_trigger {
+    position: relative;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+}
+.accordion_trigger span {
+    position: relative;
+    margin-left: 28px;
+    border-bottom: 1px dashed #b2b2b2;
+}
+.accordion_trigger:before {
+    content: "";
+    background: #c42630 url(../../img/arr-white.png) center center no-repeat scroll;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c42630;
+    border-radius: 50%;
+}
+.accordion_toggle:checked ~ .accordion_trigger:before {
+    background: #ffffff url(../../img/arr-red-up.png) center center no-repeat scroll;
+}
+
+
+.accordion_toggle {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.accordion_target {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    color: #626569;
+}
+.accordion_toggle:checked ~ .accordion_target {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+    clip: auto;
+    padding: 20px 20px 20px 50px;
+}
+.accordion_toggle:checked ~ .accordion_trigger {
+    color: #7f7f7f;
+}
+.accordion_toggle:checked ~ .accordion_trigger span {
+    border: none;
+}

@@ -1,0 +1,92 @@
+.nav {
+  position: relative;
+  display: block;
+  text-align: center;
+  height: 66px;
+  z-index: 50;
+}
+.nav > .nav__list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  position: relative;
+  float: left;
+  display: inline-block;
+  line-height: 66px;
+  margin-right: 1px;
+  font-family: 'PT Sans Narrow';
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__item--active {
+  background-color: #f2c19d;
+}
+.nav__item > a {
+  display: block;
+  border: none;
+  color: #163782;
+  padding: 0 26px;
+}
+.nav__item:hover {
+  background-color: #2d6899;
+  color: #ffffff;
+}
+.nav__item:hover > a {
+  color: #ffffff;
+}
+.nav__item-submenu > a {
+  padding-right: 43px;
+}
+.nav__item-submenu:after {
+  width: 7px;
+  height: 4px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  margin-top: -2px;
+  background: url("./../../img/arr-red.png") 0 0 no-repeat scroll;
+}
+.nav__item-submenu:hover:after {
+  background: url("./../../img/arr-white.png") 0 0 no-repeat scroll;
+}
+.nav__item-submenu:hover > .submenu {
+  display: block;
+}
+
+/* Подменю  */
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 66px;
+  left: 0;
+  background-color: #2D6899;
+  box-shadow: 0 2px 4px rgba(15, 31, 54, .35);
+}
+.submenu__item {
+  display: block;
+  border-top: 1px solid #3377af;
+  font-family: 'PT Sans';
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+}
+.submenu__item > a {
+  display: block;
+  border: 0;
+  color: #9EDBFE;
+  padding-left: 26px; 
+}
+.submenu__item > a:hover {
+  background-color: #3377af;
+  color: #ffffff;
+} 

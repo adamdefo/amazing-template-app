@@ -1,0 +1,38 @@
+.footer {
+    color: #9dd8ff;
+    background: #264471;
+    height: 70px;
+    font-size: 14px;
+}
+.footer-box {
+    line-height: 70px;
+}
+.footer p {
+    line-height: 70px;
+    margin-bottom: 0;
+}
+.footer a {
+    color: #ffffff;
+}
+.footer .copyright {
+    background: url("./../../img/logo-gosuslug.png") left center no-repeat scroll;
+    text-align: left;
+    padding-left: 50px;
+}
+.footer .developer {
+    text-align: right;
+}
+.footer .developer > span {
+    display: inline-block;
+}
+.footer-sepr {
+    vertical-align: middle;
+    width: 1px;
+    height: 26px;
+    margin: 0 18px;
+    background: url("./../../img/footer-sepr.png") center center no-repeat scroll;
+}
+.footer-help-phone {
+   background: url("./../../img/ico-help.png") left center no-repeat scroll;
+   padding-left: 29px;  
+}

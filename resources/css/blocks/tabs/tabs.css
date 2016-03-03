@@ -1,0 +1,43 @@
+.tab-info {
+  display: none;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+.tab-info.active {
+  display: block;
+}
+
+/* основные табы */
+.tabs {
+  min-width: 980px;
+  margin: 0 auto;
+}
+.tabs-triger {
+  width: 100%;
+}
+.tabs-triger > .tab {
+  display: inline-block;
+  color: #1692db;
+  font-family: 'PT Sans Narrow'; 
+  font-size: 25px;
+  line-height: 73px;
+  margin: 0 -2px -1px;
+  text-align: center;
+}
+.tabs-triger > .tab:hover {
+  color: #264471;
+  cursor: pointer;
+}
+.tabs-triger > .tab--active {
+  color: #111111 !important;
+  border: 1px solid #e6e8ed;
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+}
+.tab-content {
+  display: none;
+  padding-top: 40px;
+  background: #ffffff;
+  border-top: 1px solid #e6e8ed;
+}

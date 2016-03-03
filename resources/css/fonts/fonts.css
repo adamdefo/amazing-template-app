@@ -1,0 +1,92 @@
+@import "font-awesome.css";
+
+/* PT Sans */
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans'), local('PTSans-Regular'), url('pt_sans/ptsans.woff2') format('woff2'), url('pt_sans/ptsans.woff') format('woff'), url('pt_sans/ptsans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans Italic'), local('PTSans-Italic'), url('pt_sans/ptsansitalic.woff2') format('woff2'), url('pt_sans/ptsansitalic.woff') format('woff'), url('pt_sans/ptsansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url('pt_sans/ptsansbold.woff2') format('woff2'), url('pt_sans/ptsansbold.woff') format('woff'), url('pt_sans/ptsansbold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url('pt_sans/ptsansbolditalic.woff2') format('woff2'), url('pt_sans/ptsansbolditalic.woff') format('woff'), url('pt_sans/ptsansbolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* PT Sans Narrow */
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('pt_sans_narrow/ptsansnarrow.woff2') format('woff2'), url('pt_sans_narrow/ptsansnarrow.woff') format('woff'), url('pt_sans_narrow/ptsansnarrow.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'), url('pt_sans_narrow/ptsansnarrowbold.woff2') format('woff2'), url('pt_sans_narrow/ptsansnarrowbold.woff') format('woff'), url('pt_sans_narrow/ptsansnarrowbold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Roboto */
+@font-face {
+    font-family:'Roboto Light';
+    src:url('roboto/roboto-light-webfont.eot');
+    src:url('roboto/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('roboto/roboto-light-webfont.woff') format('woff'),
+        url('roboto/roboto-light-webfont.ttf') format('truetype');
+    font-weight:300;
+    font-style:normal;
+    }
+
+@font-face {
+    font-family:'Roboto Regular';
+    src:url('roboto/roboto-regular-webfont.eot');
+    src:url('roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('roboto/roboto-regular-webfont.woff') format('woff'),
+        url('roboto/roboto-regular-webfont.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    }
+    
+@font-face {
+    font-family:'Roboto Medium';
+    src:url('roboto/roboto-medium-webfont.eot');
+    src:url('roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('roboto/roboto-medium-webfont.woff') format('woff'),
+        url('roboto/roboto-medium-webfont.ttf') format('truetype');
+    font-weight:500;
+    font-style:normal;
+    }
+
+@font-face {
+    font-family:'Roboto Bold';
+    src:url('roboto/roboto-bold-webfont.eot');
+    src:url('roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('roboto/roboto-bold-webfont.woff') format('woff'),
+        url('roboto/roboto-bold-webfont.ttf') format('truetype');
+    font-weight:600;
+    font-style:normal;
+    }
+
+@font-face {
+    font-family:'Roboto Black';
+    src:url('fonts/roboto-black-webfont.eot');
+    src:url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/roboto-black-webfont.woff') format('woff'),
+        url('fonts/roboto-black-webfont.ttf') format('truetype');
+    font-weight:700;
+    font-style:normal;
+    }

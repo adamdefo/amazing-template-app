@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="ru" ng-app="FuckApp">
+<html lang="en" ng-app="FuckApp">
 <head>
   <meta charset="utf-8">
+  <title>Amazing template</title>
+  <meta name='yandex-verification' content='' />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  
-  <title>My fucking application</title>
-  
-  <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="./resources/css/styles.css" />
   <script type="text/javascript" src="./resources/js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="./resources/js/html5.js"></script>
 
   <script type="text/javascript" src="./app/angular/angular.min.js"></script>
   <script type="text/javascript" src="./app/app.js"></script>
@@ -16,15 +19,133 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
+
 <body ng-controller="MainCtrl">
 
-  <div class="wrapper">
+  <div class="layout">
 
-    <main class="content">
-      <h1>Test title</h1>
-    </main>
+    <div class="wrapper">
+    
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="res__box">
+              <button class="box__btn-open">
+                <span>Выпадающий список</span>
+              </button>
+              <div class="res__hide-box tabset">
+                <ul class="res__list tabs-top">
+                  <li class="res__li tab active" data-tab="tab-1">
+                    <a href="#">Таб 1</a>
+                  </li>
+                  <li class="res__li tab" data-tab="tab-2">
+                    <a href="#">Таб 2</a>
+                  </li>
+                </ul>
+                <ul class="res__getlist tabs-info">
+                  <li class="tab-info active" data-tab="tab-1">
+                    <ul>
+                      <li>Органы власти 1</li>
+                      <li>Органы власти 2</li>
+                      <li>Органы власти 3</li>
+                      <li>Органы власти 4</li>
+                      <li>Органы власти 5</li>
+                    </ul>
+                  </li>
+                  <li class="tab-info" data-tab="tab-2">
+                    <ul>
+                      <li>Муниципальные образования</li>
+                      <li>Муниципальные образования</li>
+                      <li>Муниципальные образования</li>
+                      <li>Муниципальные образования</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-box flr clr">
+              <div class="header-item auth auth-login">
+                <span class="auth-username">Константин-Михайловский</span>
+                <ul class="auth-dropdown auth-dropdown-login">
+                  <li><a href="#"><span>Личный кабинет</span></a></li>
+                  <li><a href="#"><span>Настройки</span></a></li>
+                </ul>
+              </div>
+              <div class="header-item auth-exit">
+                <a href="#"><span>Выход</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__nav">
+          <div class="container">
+            <div class="logo">
+              <a href="./" title="Логотип"><img src="./resources/css/img/logo.png" title="Логотип" alt="Логотип"></a>
+            </div>
+            <div class="header-box flr">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#" title="Пункт меню"><span>Пункт меню</span></a></li>
+                  <li class="nav__item nav__item-submenu"><a href="#" title="Пункт меню"><span>Пункт меню</span></a>
+                    <ul class="submenu">
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню<span></a></li>
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню</span></a></li>
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item nav__item-submenu"><a href="#" title="Пункт меню"><span>Пункт меню</span></a>
+                    <ul class="submenu">
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню<span></a></li>
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню</span></a></li>
+                      <li class="submenu__item"><a href="#" title="Подпункт меню"><span>Подпункт меню</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-search">
+                <form class="search-form">
+                  <input id="search" type="text" name="q" placeholder="Введите что-нибудь для поиска" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item-home"><a href="#"><span>Главная</span></a></li>
+              <li class="breadcrumbs__item breadcrumbs__item--current"><a href="#"><span>Хлебная крошка</span></a></li>
+            </ul>
+          </div>
+        </div>     
+      </header>
+
+      <main class="content">
+      <!-- Content -->
+      </main>
+    
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box copyright col col-2"><span>© Amazing template, 2016</span></div>
+        <div class="footer-box developer col col-2">
+          <span class="footer-help-phone">8 (928) 401-79-99</span>
+          <span class="footer-sepr"></span>
+          <span class="footer-help-email">
+            <a href="mailto:support@chuvaka.ru"><span>support@chuvaka.ru</span></a>
+          </span>
+        </div>
+      </div>
+    </footer>
   
   </div>
+
+  <script type="text/javascript">
+  $(function() {
+      // jcf.replaceAll();
+  });
+  </script>
 
 </body>
 </html>

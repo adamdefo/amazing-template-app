@@ -1,6 +1,66 @@
 .section {
-    display: block;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding-bottom: 39px;
+  border-bottom: 1px solid #eceff2;
+}
+.section-nobrd {
+  border: none;
+}
+.section-title {
+  font-family: 'PT Sans';
+  font-size: 25px;
+  margin-bottom: 39px;
+}
+
+/* таблица в секциях */
+.section-tbl {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.section-tbl .label {
+  font-family: 'PT Sans';
+  font-size: 15px;
+  font-weight: 600;
+  color: #626569;
+}
+.section-tbl td {
+  padding: 14px 14px 15px;
+  vertical-align: top;
+}
+.section-tbl td.label {
+  width: 340px;
+}
+.section-tbl tr:nth-child(odd) {
+  background-color: #F5F7F9;
+}
+
+/* таблица в ЛК */
+.static-tbl {
+  color: #626569;
+}
+.static-tbl thead {
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #dfe6e8;
+  text-align: left;
+}
+.static-tbl thead tr {
+  background-color: #f8fbfc !important; 
+}
+.static-tbl thead th {
+  padding: 26px 16px;  
+}
+.static-tbl thead th.info {
+  width: 480px;  
+}
+.static-tbl tbody tr {
+  border-bottom: 1px solid #e6e8ed;
+}
+.static-tbl tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.static-tbl tbody td {
+  padding: 23px 16px 24px;
 }

@@ -1,0 +1,54 @@
+.breadcrumbs {
+    position: relative;
+    font-size: 15px;
+}
+.breadcrumbs__item {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 10px;
+    padding: 0;
+    line-height: 50px;
+    text-align: left;
+    outline: none;
+}
+.breadcrumbs__item-home {
+    padding-left: 28px;
+    
+}
+.breadcrumbs__item-home:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 15px;
+    top: 17px;
+    left: 0;
+    background: url("ico-home.png") 0 0 no-repeat scroll;
+    
+}
+.breadcrumbs .breadcrumbs__item + .breadcrumbs__item {
+    position: relative;
+    padding-left: 28px;
+}
+.breadcrumbs .breadcrumbs__item + .breadcrumbs__item:after {
+    /*content: '→';*/
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 49px;
+    top: 0;
+    left: 0;
+    background: url("separator.png") 0 0 no-repeat scroll;
+}
+.breadcrumbs__item > a {
+    color: #395595;
+    font-weight: 600;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+}
+.breadcrumbs__item--current > a {
+    color: #9499a3;
+    font-weight: 400;
+}
